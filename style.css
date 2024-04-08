@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background: darkgray;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#verticalButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+  border-radius: 5px;
+  background: #007bff;
+  padding: 5px;
+  color: #fff;
+}
+
+.info-box {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.info-box h2 {
+  margin-top: 0;
+}
+
+.info-box p {
+  margin-bottom: 10px;
+}
+
+.info-box .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  cursor: pointer;
+  font-size: 18px;
+  color: #aaa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  background: #f0f0f0;
+}
+
+.nav-btn:hover {
+  background: #ddd;
+}
+
+.info-box-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.info-box-btn:hover {
+  background-color: #0056b3;
+}
+
+.toggle-network-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.toggle-network-btn:hover {
+  background-color: #0056b3;
+}
+
+#networkCanvas {
+  background: black; 
+  display: none;
+}
+
+#carCanvas{
+  background:rgb(100, 100, 100);
+}
